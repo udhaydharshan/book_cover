@@ -1,5 +1,5 @@
 # Ex.06 Book Front Cover Page Design
-# Date:
+# Date:13.12.2025
 # AIM:
 To design a book front cover page using HTML and CSS.
 
@@ -84,6 +84,8 @@ fp.html
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+            
+
         }
 
 
@@ -123,14 +125,25 @@ fp.html
             display: flex;
             justify-content: space-between;
         }
-        .top{
+
+        .top {
             border: 0;
             height: 2px;
             background-color: white;
             margin-top: 10px;
-            position:absolute;
+            position: absolute;
             width: 39%;
             left: 2px;
+        }
+
+        .inner-border {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            border: 3px solid #f3efef;
+            pointer-events: none;
         }
 
         .photo-box {
@@ -155,8 +168,9 @@ fp.html
 <body>
 
     <div class="book-container">
+        <div class="inner-border"></div>
 
-        <div class="top-title">SEC Insights</div>
+        <div class="top-title">NATURE</div>
 
         <div class="main-title">Quest Through Uncharted Realms</div>
 
@@ -164,7 +178,7 @@ fp.html
 
         <div class="special-edition">Collector's Edition</div>
         <hr class="top">
-        
+
         <div class="photo-box"><img src="{% static 'images/photo.png' %}" alt="Author"></div>
 
         <div class="authors">
@@ -178,6 +192,8 @@ fp.html
 </html>
 ```
 # OUTPUT:
-![alt text](<Screenshot 2025-12-13 090748.png>)
+![alt text](<Screenshot 2025-12-13 102410.png>)
+
+
 # RESULT:
 The program for designing book front cover page using HTML and CSS is completed successfully.
