@@ -56,7 +56,7 @@ fp.html
 
 <head>
     <meta charset="UTF-8">
-    <title>Fundamentals of Web Application Development</title>
+    <title>Quest Through Uncharted Realms</title>
 
     <style>
         body {
@@ -67,20 +67,20 @@ fp.html
             justify-content: center;
             align-items: center;
             font-family: "Georgia", serif;
-            background: #adee77c2;
-            /* or any plain background */
+            background: floralwhite;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         .book-container {
             width: 420px;
             height: 600px;
-            border: 3px solid #ffd700;
             padding: 20px;
             position: relative;
             color: white;
-
-            /* Apply background only to the sheet */
-            background-image: url("{% static 'images/bgimg.jpg' %}");
+            background-color: white;
+            background-image: url("{% static 'images/bookbg.png' %}");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -109,7 +109,7 @@ fp.html
         .special-edition {
             font-size: 16px;
             font-weight: bold;
-            margin-top: 230px;
+            margin-top: 239px;
         }
 
         .authors {
@@ -123,16 +123,23 @@ fp.html
             display: flex;
             justify-content: space-between;
         }
+        .top{
+            border: 0;
+            height: 2px;
+            background-color: white;
+            margin-top: 10px;
+            position:absolute;
+            width: 39%;
+            left: 2px;
+        }
 
         .photo-box {
             position: absolute;
             right: 20px;
-            bottom: 65px;
+            bottom: 30px;
             width: 120px;
             height: 120px;
             border: 2px solid #fff;
-            overflow: hidden;
-            border-radius: 2px;
             background: #fff;
         }
 
@@ -151,26 +158,17 @@ fp.html
 
         <div class="top-title">SEC Insights</div>
 
-        <div class="main-title">
-            FUNDAMENTALS OF <br>
-            WEB APPLICATION <br>
-            DEVELOPMENT
-        </div>
+        <div class="main-title">Quest Through Uncharted Realms</div>
 
-        <div class="sub-text">
-            Deep Dive in HTML, CSS & JS Basics <br>
-            Top seller of 2025
-        </div>
+        <div class="sub-text">The Complete Expeditionary Notes of a World Traveler</div>
 
-        <div class="special-edition">SPECIAL EDITION</div>
-
-        <div class="photo-box">
-            <img src="{% static 'images/photo.jpg' %}" alt="Author">
-        </div>
+        <div class="special-edition">Collector's Edition</div>
+        <hr class="top">
+        
+        <div class="photo-box"><img src="{% static 'images/photo.png' %}" alt="Author"></div>
 
         <div class="authors">
-            <span>UDHAYDHARSHAN.S</span>
-
+            <span>Neil Gaiman</span>
         </div>
 
     </div>
@@ -180,6 +178,6 @@ fp.html
 </html>
 ```
 # OUTPUT:
-![alt text](<Screenshot 2025-12-02 141309.png>)
+![alt text](<Screenshot 2025-12-13 090748.png>)
 # RESULT:
 The program for designing book front cover page using HTML and CSS is completed successfully.
