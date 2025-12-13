@@ -133,7 +133,7 @@ fp.html
             margin-top: 10px;
             position: absolute;
             width: 39%;
-            left: 2px;
+            left: 10px;
         }
 
         .inner-border {
@@ -192,8 +192,6 @@ fp.html
 </html>
 ```
 # OUTPUT:
-![alt text](<Screenshot 2025-12-13 102410.png>)
-
-
+![alt text](<Screenshot 2025-12-13 103108.png>)
 # RESULT:
 The program for designing book front cover page using HTML and CSS is completed successfully.
